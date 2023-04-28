@@ -1,0 +1,17 @@
+.menu__label {
+	color: #ec0606;
+}
+
+.menu__input {
+	border: 1px solid #ec0606;
+}
+
+.menu__label--disabled {
+	color: gray;
+	pointer-events: none;
+}
+
+.menu__input--disabled {
+	border: 1px solid gray;
+	pointer-events: none;
+}

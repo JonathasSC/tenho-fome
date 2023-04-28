@@ -1,0 +1,129 @@
+Regras de estrutura e nomeclatura:
+
+Documetação para melhor estruturação de um projeto escalavel, para evitar ou conter possiveis
+problemas de organização.
+
+====================================================
+
+Usaremos a convenção BEM:
+BEM significa Bloco, Elemento e modificador
+
+Bloco:
+	Entidade autônoma que é significativa por si só e é independente.
+
+	Exemplos:
+	header
+	footer
+	checkbox...
+
+----------------------------------------------------
+
+Elemento:
+	Parte de um bloco, elemento filho do mesmo, sua existencia depende de um bloco.
+
+	Exemplos:
+	Item de menu
+	item de lista
+	label do checkbox...
+
+----------------------------------------------------
+
+Modificador: 
+	Uma variante de um bloco ou elemento,
+
+	Exemplos:
+	disabled
+	checked
+	dark-mode...
+
+====================================================
+
+NOMECLATURA:
+
+Bloco:
+	Assume um nome comum, que seja claro e autoexplicativo.
+
+	Exemplo:
+	.menu
+	.cabecalho
+	.rodape...
+
+----------------------------------------------------
+
+Elemento:
+	Assume uma extensão do bloco pai pelo qual faz parte, 
+	após dois underlines, mais o nome do elemento, também autoexplicativo e claro.
+
+	Exemplos:
+	.menu__item
+	.menu__link
+	.cabecalho__link
+
+----------------------------------------------------
+
+Modificador
+	Assume o nome do bloco ou elemento modificado, dois hifens, mais o nome da modificação
+
+	Exemplos:
+	.menu--dark
+	.menu__item--disabled
+	.menu__item--hover
+
+====================================================
+
+Exemplo prático:
+
+Seguindo ao pé da letra a explicação anterior, a nomeclatura ficaria assim:
+
+<menu class="menu">
+	<form class="menu__form">
+		<label class="menu__form__label">Nome</label>
+		<input class="menu__form__input">
+	</form>
+</menu>
+
+porém, isso ficaria inviavel em casos onde um bloco tenha varios herdeiros.
+podemos simplificar deixando assim:
+
+<menu class="menu">
+	<form class="menu__form">
+		<label class="menu__label">Nome</label>
+		<input class="menu__input">
+	</form>
+</menu>
+
+Caso seja necessario que um desses elementos com classes iguais tenha alguma modificação dos demais,
+usamos o modificador, assim:
+
+<menu class="menu">
+	<form class="menu__form">
+		<label class="menu__label">Nome</label>
+		<input class="menu__input">
+
+		<label class="menu__label menu__label--disabled">Email</label>
+		<input class="menu__input menu__input--disabled">
+	</form>
+</menu>
+
+Assim, no css podemos usar a classe modificadora e mudar apenas as partes que desejamos, assim:
+
+.menu__label {
+	color: #ec0606;
+}
+
+.menu__input {
+	border: 1px solid #ec0606;
+}
+
+.menu__label--disabled {
+	color: gray;
+	pointer-events: none;
+}
+
+.menu__input--disabled {
+	border: 1px solid gray;
+	pointer-events: none;
+}
+
+O menu__label comum tem borda vermelha, o menu__label--disabled tem borda cinza,
+mostrando ser desativado, por exemplo.
