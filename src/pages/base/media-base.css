@@ -44,8 +44,9 @@
 	.header__link--activate {
 		border: 0;
 	}
+}
 
-	.main__home {
-		background-image: url(/src/images/bg/home-wallpaper-mobile.png);
-	}
+
+@media (max-width: 768px){
+	
 }

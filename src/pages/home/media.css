@@ -1,0 +1,16 @@
+@media (max-width: 768px){
+	.main__home {
+		background-image: url(/src/images/bg/home-wallpaper-mobile.png);
+	}
+	.main__home--en {
+		background-image: url(/src/images/bg/home-wallpaper-mobile-en-eua.png);
+	}
+}
+
+@media (max-width: 1024px){
+	
+}
+
+@media (max-width: 1440px){
+	
+}

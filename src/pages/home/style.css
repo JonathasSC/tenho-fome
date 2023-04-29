@@ -14,3 +14,7 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+
+.main__home--en {
+	background-image: url(/src/images/bg/home-wallpaper-en-eua.png);
+}
