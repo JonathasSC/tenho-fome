@@ -1,0 +1,16 @@
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main__home {
+	position: static;
+
+	width: 100% !important;
+	height: 100vh;
+
+	background-image: url(/src/images/bg/home-wallpaper.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

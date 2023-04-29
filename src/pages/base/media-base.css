@@ -20,7 +20,7 @@
 
 		gap: 3rem;
 
-		top: 60px;
+		top: 50px;
 		left: -100%;
 
 		position: fixed;
@@ -28,7 +28,7 @@
 
 		transition: 0.2s;
 
-		padding-bottom: 20px;
+		padding: 2rem 0 4rem 0;
 
 		
 		background-color: var(--color-black-1);
@@ -39,11 +39,13 @@
 	}
 	.header__ul--activate {
 		left: 0;
-		padding: 1rem;
-		background-color: var(--color-black-1);
 	}
 
 	.header__link--activate {
 		border: 0;
+	}
+
+	.main__home {
+		background-image: url(/src/images/bg/home-wallpaper-mobile.png);
 	}
 }
