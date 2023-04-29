@@ -1,0 +1,49 @@
+@media (max-width: 768px){
+	.header__hamburguer{
+		display: block;
+		cursor: pointer;
+	}
+	.header__hamburguer--activate .header__bar:nth-child(2){
+		opacity: 0;
+	}
+	.header__hamburguer--activate .header__bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg)
+	}
+	.header__hamburguer--activate .header__bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg)
+	}
+	.header__ul {
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+
+		gap: 3rem;
+
+		top: 60px;
+		left: -100%;
+
+		position: fixed;
+		text-align: center;
+
+		transition: 0.2s;
+
+		padding-bottom: 20px;
+
+		
+		background-color: var(--color-black-1);
+
+		margin-bottom: 10px;
+		
+		border-radius: 0 0 10px 10px;
+	}
+	.header__ul--activate {
+		left: 0;
+		padding: 1rem;
+		background-color: var(--color-black-1);
+	}
+
+	.header__link--activate {
+		border: 0;
+	}
+}
