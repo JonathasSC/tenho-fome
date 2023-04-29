@@ -1,16 +1,33 @@
-@media (max-width: 768px){
+@media (max-width: 1440px){
 	.main__home {
-		background-image: url(/src/images/bg/home-wallpaper-mobile.png);
+		background-image: url(/src/images/bg/home-wallpaper-1440-pt-br.png);
 	}
+
 	.main__home--en {
-		background-image: url(/src/images/bg/home-wallpaper-mobile-en-eua.png);
+
+		background-image: url(/src/images/bg/home-wallpaper-1440-en-eua.png);
+
 	}
 }
 
 @media (max-width: 1024px){
-	
+	.main__home {
+		background-image: url(/src/images/bg/home-wallpaper-1024-pt-br.png);
+	}
+
+	.main__home--en {
+		background-image: url(/src/images/bg/home-wallpaper-1024-en-eua.png);
+	}
 }
 
-@media (max-width: 1440px){
-	
+
+
+@media (max-width: 768px){
+	.main__home {
+		background-image: url(/src/images/bg/home-wallpaper-768-pt-br.png);
+	}
+
+	.main__home--en {
+		background-image: url(/src/images/bg/home-wallpaper-768-en-eua.png);
+	}
 }
