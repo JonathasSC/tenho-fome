@@ -2,6 +2,12 @@ body {
 	background-color: var(--color-black-1);
 }
 
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: var(--color-black-1);
+}
+
 .header--activate {
 	background-color: var(--color-black-1);
 }
