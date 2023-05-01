@@ -1,11 +1,42 @@
-@media (max-width: 768px){
-	
+@media (max-width: 1440px){
+	.main {
+		background-position:right;
+		background-clip: content-box
+	}
 }
 
 @media (max-width: 1024px){
-	
+	.main__text{
+		align-items: self-start;
+		margin: auto;
+		width: 95vw;
+		height: 100%;
+		padding: 2rem;
+	}
 }
 
-@media (max-width: 1440px){
-	
+@media (max-width: 768px){
+	.mainl__title{
+		align-items: center;
+		text-align: center;
+		width: 80%;
+	}
+	.main__title, .main__title span {
+		font-size: 24pt;
+	}
+	.principal__text{
+		align-items: center;
+		margin: auto;
+		width: 100%;
+	}
+	.principal__donate {
+		display: flex;
+
+		justify-content: center;
+		width: 100%;
+	}
+	.principal__link {
+		text-align: center;
+		width: 20rem;
+	}
 }

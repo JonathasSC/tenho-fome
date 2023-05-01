@@ -3,11 +3,12 @@ body {
 }
 
 .header {
+	z-index: 1;
 	position: fixed;
+	margin-bottom: 5rem;
 	width: 100%;
 	background-color: var(--color-black-1);
 }
-
 .header--activate {
 	background-color: var(--color-black-1);
 }
