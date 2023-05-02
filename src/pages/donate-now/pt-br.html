@@ -10,6 +10,9 @@
 	<link href="/src/pages/base/media-base.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link href="media.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+	crossorigin=""/>
 </head>
 <body>
 	<header class="header">
@@ -46,18 +49,67 @@
 		</nav>
 	</header>
 
-	<main class="main">
-		<div class="main__text">
-			<h1 class="main__title">
-				"Sua doação pode fazer a diferença na vida de milhões de pessoas na Índia que estão sofrendo de <span class="main__span">fome e desnutrição grave.</span>
-			</h1>
-			<div class="main__donate">
-				<a class="main__link">Doe agora</a>
-			</div>
-		</div>
-	</main>
 	
+
+	<main class="main">
+		<section class="front">
+			<div class="front__text">
+				<h1 class="front__title">
+					"Sua doação pode fazer a diferença na vida de milhões de pessoas na Índia que estão sofrendo de <span class="front__span">fome e desnutrição grave.</span>
+				</h1>
+				<a class="front__link">Doe agora</a>
+			</div>
+		</section>
+
+		<h1 class="main__h1">Doe também para outras causas</h1>
+
+		<section class="flex">
+			
+			<div class="flex__card flex__card--1">
+				<img class="flex__image" src="/src/images/donate/africa-subsaariana.png">
+				<details class="flex__details">
+					<summary class="flex__caption">África Subsaariana</summary>
+					<p class="flex__text-details">A fome é uma realidade para milhões de pessoas na África Subsaariana. Sua doação pode fazer a diferença ao fornecer alimentos e recursos vitais para aqueles que mais precisam, ajudando a aliviar o sofrimento e a lutar contra a insegurança alimentar na região.</p>
+				</details>
+				<a class="donate">Doar agora.</a>
+			</div>
+
+			<div class="flex__card flex__card--2">
+				<img class="flex__image" src="/src/images/donate/lêmen.png">
+				<details class="flex__details">
+					<summary class="flex__caption">Lêmen</summary>
+					<p class="flex__text-details">Milhões de crianças no Iêmen estão em risco de fome e desnutrição. Sua doação pode fornecer ajuda vital para essas crianças e suas famílias, ajudando a salvar vidas e fornecer esperança em meio à crise humanitária em curso.</p>
+				</details>
+				<a class="donate">Doar agora.</a>
+			</div>
+
+			<div class="flex__card flex__card--3">
+				<img class="flex__image" src="/src/images/donate/haiti.png">
+				<details class="flex__details">
+					<summary class="flex__caption">Haiti</summary>
+					<p class="flex__text-details">Sua doação pode ajudar a salvar vidas no Haiti, onde mais de 4 milhões de pessoas estão em risco de insegurança alimentar e a crise humanitária continua a crescer. Junte-se a nós e faça a diferença na vida dessas pessoas necessitadas.</p>
+				</details>
+				<a class="donate">Doar agora.</a>
+			</div>
+
+			<div class="flex__card flex__card--3">
+				<img class="flex__image" src="/src/images/donate/afeganistao.png">
+				<details class="flex__details">
+					<summary class="flex__caption">Afeganistão</summary>
+					<p class="flex__text-details">Com sua doação, você pode ajudar a fornecer alívio e esperança para os afegãos afetados pela guerra e conflitos em seu país. Ajude a tornar uma diferença positiva na vida de milhares de pessoas no Afeganistão hoje.</p>
+				</details>
+				<a class="donate">Doar agora.</a>
+			</div>
+			
+		</section>
+		<h1 class="flex__view-more"><a>Ver mais...</a></h1>
+	</main>
+
 	<footer></footer>
+	<script src="/src/scripts/map.js"></script>
 	<script src="/src/scripts/hamburguer.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+	integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+	crossorigin=""></script>
 </body>
 </html>

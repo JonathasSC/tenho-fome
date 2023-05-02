@@ -1,42 +1,53 @@
 @media (max-width: 1440px){
-	.main {
+	.front {
 		background-position:right;
 		background-clip: content-box
 	}
+
 }
 
 @media (max-width: 1024px){
-	.main__text{
+	.section{
+		flex-direction: column;
+		height: 100vh;
+		width: 100vw;
+		gap: 3rem;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.front__text{
 		align-items: self-start;
 		margin: auto;
 		width: 95vw;
 		height: 100%;
 		padding: 2rem;
+		margin-bottom: 5rem ;
 	}
 }
 
 @media (max-width: 768px){
-	.mainl__title{
+	.front__title{
 		align-items: center;
-		text-align: center;
 		width: 80%;
 	}
-	.main__title, .main__title span {
-		font-size: 24pt;
+	.front__title,.main__h1 , .front__title span {
+		font-size: 18pt;
 	}
-	.principal__text{
+	.front_text{
 		align-items: center;
 		margin: auto;
 		width: 100%;
 	}
-	.principal__donate {
+	.front__donate {
 		display: flex;
 
 		justify-content: center;
 		width: 100%;
 	}
-	.principal__link {
+	.front__link {
 		text-align: center;
-		width: 20rem;
+		padding: 1rem 1rem;
+		width: 15rem;
 	}
 }

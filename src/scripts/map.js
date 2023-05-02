@@ -1,12 +1,3 @@
-const hamburguer = document.querySelector(".header__hamburguer")
-const navMenu = document.querySelector(".header__ul")
-
-hamburguer.addEventListener('click', () => {
-	hamburguer.classList.toggle('header__hamburguer--activate');
-	navMenu.classList.toggle('header__ul--activate')
-})
-
-
 function getLocation(){
 	if(navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(showPosition)
@@ -16,7 +7,8 @@ function getLocation(){
 }
 
 function showPosition(position){
-
+	document.getElementById("pos").innerHTML = "Latitude: " + position.coords.latitude +
+	"<br>Longitude: " + position.coords.longitude;
 	
 	var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 13);
 
@@ -27,5 +19,3 @@ function showPosition(position){
 	L.marker([position.coords.latitude, position.coords.longitude]).addTo(map)
 	.openPopup();
 }
-// -8.0576744
-// -34.9396259
