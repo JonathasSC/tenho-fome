@@ -27,5 +27,3 @@ function showPosition(position){
 	L.marker([position.coords.latitude, position.coords.longitude]).addTo(map)
 	.openPopup();
 }
-// -8.0576744
-// -34.9396259
