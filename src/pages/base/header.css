@@ -4,6 +4,7 @@ body {
 
 .header {
 	width: 100%;
+    position: relative;
 	background-color: var(--color-black-1);
 }
 
