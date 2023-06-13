@@ -1,103 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pagemento monetário </title>
-    <link href="/src/pages/base/base.css" rel="stylesheet">
-    <link href="/src/pages/base/header.css" rel="stylesheet">
-    <link href="/src/pages/base/media-base.css" rel="stylesheet">
-    <link href="style-monetario.css" rel="stylesheet">
-    <link href="media.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Donate now</title>
+	<link href="media.css" rel="stylesheet">
+	<link href="/src/pages/base/base.css" rel="stylesheet">
+	<link href="/src/pages/base/header.css" rel="stylesheet">
+	<link href="/src/pages/base/media-base.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/pages/donate-now/subpages/donate-money/style-money.css" class="css">
 </head>
-    <body>
-        <header class="header">
-            <nav class="header__nav">
-                <a href="/src/pages/home/pt-br.html">
-                    <img class="header__logo" src="/src/images/icons/logo.png">
-                </a>
-                <ul class="header__ul">
-                    <li class="header__item">
-                        <a href="/src/pages/about-us/pt-br.html" class="header__link">Sobre nós</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="/src/pages/donate-now/pt-br.html" class="header__link header__link--activate">Doe agora</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="/src/pages/contact/pt-br.html" class="header__link ">Contato</a>
-                    </li>
-                </ul>
-    
-                <div class="header__translate-icons">
-                    <a href="/src/pages/donate-now/subpages/donate-money/donate_money_pt-br.html">
-                        <img class="header__br" src="/src/images/icons/br-icon.png">
-                    </a>
-                    <a href="/src/pages/donate-now/subpages/donate-money/donate_money_en-eua.html">
-                        <img class="header__eua" src="/src/images/icons/eua-icon.png">
+<body>
+	<header class="header">
+		<nav class="header__nav">
+			<a href="/src/pages/home/pt-br.html">
+				<img class="header__logo" src="/src/images/icons/logo.png">
+			</a>
+			<ul class="header__ul">
+				<li class="header__item">
+					<a href="/src/pages/about-us/en-eua.html" class="header__link">About us</a>
+				</li>
+				<li class="header__item">
+					<a href="/src/pages/donate-now/en-eua.html" class="header__link header__link--activate">Donate now</a>
+				</li>
+				<li class="header__item">
+					<a href="/src/pages/contact/en-eua.html" class="header__link ">Contact</a>
+				</li>
+			</ul>
+
+			<div class="header__translate-icons">
+				<a href="/src/pages/donate-now/subpages/donate-money/donate_money_pt-br.html">
+					<img class="header__br" src="/src/images/icons/br-icon.png">
+				</a>
+				<a href="/src/pages/donate-now/subpages/donate-money/donate_money_en-eua.html">
+					<img class="header__eua" src="/src/images/icons/eua-icon.png">
+				</a>
+			</div>
+			
+			<div class="header__hamburguer">
+				<span class="header__bar"></span>
+				<span class="header__bar"></span>
+				<span class="header__bar"></span>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="box">
+            <p class="main__title">Escolha como vai doar</p>
+            <div class="box__cards">
+                <div class="card">
+                    <a href="https://www.bcb.gov.br/estabilidadefinanceira/pix" class="card__link">
+                        <img class="pay_mode" src="/src/images/cards/pix.png">
+                        <p class="card__label">Doe com PIX</p> 
                     </a>
                 </div>
-                
-                <div class="header__hamburguer">
-                    <span class="header__bar"></span>
-                    <span class="header__bar"></span>
-                    <span class="header__bar"></span>
+                <div class="card">
+                    <a href="https://www.bcb.gov.br/estabilidadefinanceira/pix" class="card__link">
+                        <img class="pay_mode" src="/src/images/cards/mastercard.png">
+                        <p class="card__label">Doe com cartão</p>
+                    </a>
                 </div>
-            </nav>
-        </header>		
-    </body>
-    <main class="main">
-        <div class="box">
-        
-                     <h1 class="box_title">Escolha como doar financeiramente:</h1>
-               
-          <section>
-           <ul>
-            <div class=".div.img">                             
-                  <li>  
-                        <a href="https://www.bcb.gov.br/estabilidadefinanceira/pix">
-                     <center>   <img class="opcoes_imgs" src="/src/images/icons/marca-pix-1-.webp" height="126px"> </center>
-                        </a>
-                                     <h3> Pague com PIX</h3> 
-                                <h4>Indepentende do seu banco</h4>
-                 </li>  
+                <div class="card">
+                    <a href="https://www.bcb.gov.br/estabilidadefinanceira/pix" class="card__link">
+                        <img class="pay_mode" src="/src/images/cards/paypal.png">
+                        <p class="card__label">Doe com Paypal</p> 
+                    </a>
+                </div>
             </div>
-
-            <div class=".div.img"> 
-                 <li>      <a href="https://www.paypal.com/br/home">
-                      <center>    <img class="opcoes_imgs" src="/src/images/icons/Paypal.png" height="126px"> </center>
-                           </a>
-                                             <h3> Pague com Paypal</h3> 
-                                    <h4> Com qualquer cartão cadastrado</h4>
-                </li>                         
-            </div>                   
-                
-                <div class=".div.img">
-                <li> 
-
-                    <a href="https://www.mastercard.com.br/pt-br.html">
-                 <center>   <img class="opcoes_imgs" src="/src/images/icons/Mastercard.png" height="126px"> </center>
-                    </a>
-                                 <h3> Pague com Mastercard</h3> 
-                              <h4> Opções: Debito ou crédito</h4>
-
-                </li>
-
-              </div>
-                
-           </ul>
-                        
-    
-        
-      
-        
-        </section>
-        
-        </div> 
-        
-     
-        
-        
-	</main>
-
-   
+	    </div>
+    </main>
+	<footer>
+        <p><strong>Endereço: </strong>Brasil, Recife PE</p>
+        <p><strong>Número: </strong>(99)99999-9999</p>
+        <p><strong>E-mail: </strong>tenhofomesite@gmail.com</p>
+        <p><strong>Instagram: </strong><a class="insta" href="https://instagram.com/tenho__fome?igshid=NGExMmI2YTkyZg==">@tenho_fome</a></p>
+	</footer>
+	<script src="/src/scripts/hamburguer.js"></script>
+</body>
 </html>

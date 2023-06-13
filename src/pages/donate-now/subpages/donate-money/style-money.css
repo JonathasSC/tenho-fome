@@ -1,6 +1,7 @@
 .main {
     background-image: url(/src/images/bg/money-wallpaper.png);
     background-size: cover;
+    background-position: center;
     height: calc(100vh - 50px);
     display: flex;
     align-items: center;
