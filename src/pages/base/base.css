@@ -8,7 +8,7 @@
 	--color-light-blue-1: #ecf6ff;
 	--color-white-1: #fcfcfc;
 	--color-gray-1: #aaaaaa;
-	--color-gray-1-opacity: #aaaaaa44;
+	--color-gray-1-opacity: #aaaaaa7c;
 
     --blue: #35BFFF;
     --blue-hover: #24b1f3;
@@ -26,4 +26,14 @@
 	font-family: Roboto;
 
 	box-sizing: border-box;
+}
+
+footer {    
+    display: flex;
+    padding: 5rem;
+    gap: 20px;
+    flex-direction: column;
+    color: white;
+    background-color: var(--color-black-1);
+    text-align: center;
 }

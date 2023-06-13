@@ -21,7 +21,7 @@
 }
 
 .main__title {
-    font-size: 18pt;
+    font-size: 24pt;
     font-weight: bold;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .card {
-    background-color: gray;
+    background-color: var(--color-gray-1-opacity);
     border-radius: 2rem;
     padding: 3rem;
 }
@@ -40,11 +40,18 @@
 .card__link {
     display: flex;
     gap: 3rem;
+    text-decoration: none;
     flex-direction: column;
 }
 
 .card__label {
     padding: 1rem;
     border-radius: 1rem;
+    color: var(--color-white-1);
+    font-weight: bold;
     background-color: var(--blue);
+}
+
+.card__label:hover {
+    background-color: var(--blue-hover);
 }
