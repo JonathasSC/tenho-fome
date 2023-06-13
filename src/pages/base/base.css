@@ -10,6 +10,8 @@
 	--color-gray-1: #aaaaaa;
 	--color-gray-1-opacity: #aaaaaa44;
 
+    --blue: #35BFFF;
+    --blue-hover: #24b1f3;
 	/* transition effects */
 	--transition-fade: all ease .5s;
 }

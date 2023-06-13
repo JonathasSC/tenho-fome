@@ -1,0 +1,50 @@
+.main {
+    background-image: url(/src/images/bg/money-wallpaper.png);
+    background-size: cover;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay_mode{
+    width: 200px;
+    border-radius: 1rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.main__title {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.box__cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    background-color: gray;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.card__link {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.card__label {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--blue);
+}

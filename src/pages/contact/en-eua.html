@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-eua">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
-	<link href="style.css" rel="stylesheet">
-	<link href="media.css" rel="stylesheet">
 	<link href="/src/pages/base/base.css" rel="stylesheet">
 	<link href="/src/pages/base/header.css" rel="stylesheet">
 	<link href="/src/pages/base/media-base.css" rel="stylesheet">
+    	<link href="style.css" rel="stylesheet">
+	<link href="media.css" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -46,8 +46,65 @@
 		</nav>
 	</header>
 	<main class="main">
+        <h1 class="form__title">
+            Fill out the form to contact us, check that all the information is correct.
+        </h1>
+		<form class="form">
+
+            <div class="input">
+
+                <div class="input__item">  
+                    <label for="nomesobrenome">Full name</label>
+                    <input type="text" id="nomesobrenome" class="input__name" placeholder="Seu nome aqui" required>
+                </div>
+    
+                <div class="input__item">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="input__email" required placeholder="example@domain.com">
+                </div>
+
+                <div class="input__item">
+                    <label for="telefone">Cellphone</label>
+                    <input type="tel" id="telefone" class="input__cellphone" required placeholder="ddd + numero">
+                </div>
+    
+                <div class="input__item">
+                    <label for="mensagem">Message</label>
+                    <textarea id="mensagem" placeholder="Enter reason for contact" class="input__message" type="text"></textarea>
+                </div>
+
+                <hr>
+                    
+                <div class="radio">
+                    <p>Where can we send you a message?</p>
+                    <div class="radio__div-group">
+                        <div class="radio__div">
+                            <label for="radio-email">Email</label>
+                            <input type="radio" name="contato" value="email" id="radio-email">
+                        </div>
+        
+                        <div class="radio__div">
+                            <label for="radio-email">Cellphone</label>
+                            <input type="radio" name="contato" value="email" id="radio-cellphone">
+                        </div>
+        
+                        <div class="radio__div">
+                            <label for="radio-email">Whatsapp</label>
+                            <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        </div>
+                    </div>    
+                </div>
+                <button onclick="AlertReceiveNotify()"><p class="enviar">Submit</p></button>
+            </div>
+		</form>
 	</main>
-	<footer></footer>
+	<footer>
+        <p><strong>Address: </strong>Brazil, Recife PE</p>
+        <p><strong>Number: </strong>(99)99999-9999</p>
+        <p><strong>E-mail: </strong>tenhofomesite@gmail.com</p>
+        <p><strong>instagram: </strong><a class="insta" href="https://instagram.com/tenho__fome?igshid=NGExMmI2YTkyZg==">@tenho_fome</a></p>
+	</footer>
 	<script src="/src/scripts/hamburguer.js"></script>
+	<script src="/src/scripts/contact-en.js"></script>
 </body>
 </html>
